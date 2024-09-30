@@ -1,0 +1,16 @@
+{
+  "name": "digital-hive-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Eduardo André de Lima Carneiro (eandre.carneiro@gmail.com)",
+  "license": "MIT",
+  "description": "Tenant API management control"
+}
