@@ -8,7 +8,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('API Working!')
+    res.status(200).json({
+        message:"API Working",
+        responseStatus: 200
+    });
 });
 
 app.listen(port, () => {
