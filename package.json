@@ -1,16 +1,28 @@
 {
   "name": "digital-hive-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "server.mjs",
+  "type": "module",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "mocha",
+    "start": "node server.mjs",
+    "dev": "nodemon server.mjs"
   },
   "keywords": [],
   "author": "Eduardo André de Lima Carneiro (eandre.carneiro@gmail.com)",
   "license": "MIT",
-  "description": "Tenant API management control"
+  "description": "Tenant API management control",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "express": "^4.21.0",
+    "mocha": "^10.7.3"
+  },
+  "devDependencies": {
+    "@types/chai-http": "^3.0.5"
+  }
 }
